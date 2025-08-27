@@ -50,7 +50,6 @@ export function TopOffersModal({ isOpen, onClose }: TopOffersModalProps) {
         <div className="p-6 text-center">
           <div className="mb-4">
             <div className="text-xl font-bold mb-1 text-gray-900">{topSite.bonus}</div>
-            <div className="text-sm text-gray-600">{topSite.dopbonus}</div>
           </div>
 
           <div className="flex justify-center gap-1 mb-4">
