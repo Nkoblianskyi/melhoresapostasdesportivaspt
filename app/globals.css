@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White background */
+    --foreground: 220 13% 18%; /* Dark gray for text */
+
+    --card: 120 60% 97%; /* Very light green for cards */
+    --card-foreground: 142 76% 36%; /* Portuguese green for card text */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Updated to Portuguese flag colors - red and green */
+    --primary: 120 100% 25%; /* Portuguese flag green */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 85% 45%; /* Portuguese flag red */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%; /* Light gray for muted elements */
+    --muted-foreground: 220 13% 18%;
+
+    --accent: 0 85% 45%; /* Portuguese red accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Updated borders to Portuguese green */
+    --border: 120 100% 85%; /* Light Portuguese green borders */
+    --input: 120 60% 97%;
+    --ring: 120 100% 25%;
+    /* </CHANGE> */
+
+    /* Updated chart colors to Portuguese theme */
+    --chart-1: 120 100% 25%; /* Portuguese green */
+    --chart-2: 0 85% 45%; /* Portuguese red */
+    --chart-3: 0 84% 60%;
+    --chart-4: 220 13% 46%;
+    --chart-5: 120 100% 35%; /* Lighter Portuguese green */
+    /* </CHANGE> */
+
+    --radius: 0.75rem;
+
+    /* Updated sidebar colors to Portuguese theme */
+    --sidebar: 120 100% 25%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 100% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 120 100% 85%;
+    --sidebar-ring: 120 100% 25%;
+    /* </CHANGE> */
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 13% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Updated dark mode colors to Portuguese theme */
+    --primary: 120 100% 30%; /* Slightly lighter Portuguese green for dark mode */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 85% 50%; /* Slightly lighter Portuguese red for dark mode */
+    --secondary-foreground: 0 0% 100%;
+    /* </CHANGE> */
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    /* Updated accent for dark mode */
+    --accent: 0 85% 50%;
+    --accent-foreground: 0 0% 100%;
+    /* </CHANGE> */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    /* Updated ring color for dark mode */
+    --ring: 120 100% 30%;
+    /* </CHANGE> */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Added background image to body */
+    background-image: url("/images/portugal-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer utilities {
+  .section-transparent {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+
+  /* Updated glow animations to use Portuguese colors */
+  .animate-glow {
+    animation: portugueseGlow 2s infinite;
+  }
+
+  .animate-portuguese-glow {
+    animation: portugueseGlow 3s infinite;
+  }
+  /* </CHANGE> */
+
+  .animate-irish-glow {
+    animation: irishGlow 3s infinite;
+  }
+
+  .celtic-border {
+    border-image: linear-gradient(45deg, #22c55e, #f97316, #22c55e) 1;
+  }
+
+  /* Updated border gradient to Portuguese colors */
+  .portuguese-border {
+    border-image: linear-gradient(45deg, #008000, #dc143c, #008000) 1;
+  }
+  /* </CHANGE> */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Updated glow keyframes to Portuguese colors */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.8);
+  }
+}
+
+@keyframes portugueseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3), 0 0 20px rgba(220, 20, 60, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5), 0 0 30px rgba(220, 20, 60, 0.3);
+  }
+}
+/* </CHANGE> */
+
+@keyframes irishGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3), 0 0 20px rgba(249, 115, 22, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 30px rgba(249, 115, 22, 0.3);
+  }
+}
