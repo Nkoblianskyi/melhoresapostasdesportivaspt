@@ -37,7 +37,7 @@ export function TopOffersModal({ isOpen, onClose }: TopOffersModalProps) {
         <X className="w-5 h-5" />
       </Button>
 
-      <div className="w-full max-w-sm bg-white rounded-xl overflow-hidden shadow-xl">
+      <div className="w-full max-w-sm bg-black rounded-xl overflow-hidden shadow-xl">
         <div className="bg-gradient-to-r from-green-600 to-red-600 p-4 text-center">
           <img
             src={topSite.logo || "/placeholder.svg"}
