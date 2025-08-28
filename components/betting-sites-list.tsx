@@ -96,7 +96,7 @@ export default function BettingSitesList() {
                             </div>
                           </div>
                           <div className="text-center flex flex-col justify-center h-full min-h-[80px]">
-                            <p className="text-lg font-bold text-orange-500 mb-1">Welcome Bonus</p>
+                            <p className="text-lg font-bold text-orange-500 mb-1">OFERTA DE BOAS-VINDAS</p>
                             <div className="font-bold text-green-800 text-lg leading-tight">{site.bonus}</div>
                             {site.dopbonus && (
                               <div className="font-bold text-green-800 text-sm leading-tight mt-1">{site.dopbonus}</div>
@@ -154,7 +154,7 @@ export default function BettingSitesList() {
 
                         {/* Column 3: Bonus - фіксована ширина */}
                         <div className="flex flex-col items-center justify-center w-56 flex-shrink-0">
-                          <p className="text-lg font-bold text-orange-500 mb-1">Welcome Bonus</p>
+                          <p className="text-lg font-bold text-orange-500 mb-1">OFERTA DE BOAS-VINDAS</p>
                           <div className="text-center min-h-[48px] flex flex-col justify-center">
                             <div className="font-bold text-green-800 text-sm leading-tight">{site.bonus}</div>
                             {site.dopbonus && (
@@ -202,7 +202,7 @@ export default function BettingSitesList() {
 
                         {/* Column 3: Bonus - фіксована ширина */}
                         <div className="flex flex-col items-center justify-center w-80 flex-shrink-0">
-                          <p className="font-bold mb-1 text-xl text-orange-500">Welcome Bonus</p>
+                          <p className="font-bold mb-1 text-xl text-orange-500">OFERTA DE BOAS-VINDAS</p>
                           <div className="text-center min-h-[60px] flex flex-col justify-center">
                             <div className="font-bold text-green-800 xl:text-lg text-2xl leading-tight">
                               {site.bonus}
