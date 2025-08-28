@@ -72,46 +72,51 @@ export function SiteFooter() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="mb-6">
             <h4 className="font-semibold mb-4 text-center">Regulamentação e Jogo Responsável</h4>
-            <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/srij-gYi86K0uTfE1ZlktlYORedYo2UmvVV.svg"
-                alt="SRIJ - Serviço de Regulação e Inspeção de Jogos"
-                width={80}
-                height={44}
-                className="filter brightness-0 invert"
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/icad-VMwHbtIChAZBqVc5ff0Bb68vLulGm1.png"
-                alt="ICAD - Instituto para os Comportamentos Aditivos e as Dependências"
-                width={80}
-                height={44}
-                className="bg-white rounded px-2 py-1"
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gamecare-28wSsIXM6JvYV8IEvoISZl2BObnc8M.svg"
-                alt="GameCare"
-                width={80}
-                height={44}
-                className="filter brightness-0 invert"
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gamble-pGQr0ESnQWC03XY2PRoIqhnZlkWZQG.webp"
-                alt="GambleAware"
-                width={80}
-                height={44}
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jogo2-Ypbu2A3Dov5jhlk0HYnae0OYcxwGfn.png"
-                alt="Jogo Responsável"
-                width={80}
-                height={44}
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lebull-gK6toiaR5fKdyId1vOkhmIAUU4N1fS.svg"
-                alt="LeBull"
-                width={80}
-                height={30}
-              />
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+              <Link
+                href="https://www.sicad.pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+              >
+                <img src="/icad.png" alt="SICAD" className="h-8 md:h-12 w-auto object-contain" />
+              </Link>
+              <Link
+                href="https://www.gamcare.org.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+              >
+                <img src="/gamecare.svg" alt="GamCare" className="h-8 md:h-12 w-auto object-contain" />
+              </Link>
+              <Link
+                href="https://www.srij.turismodeportugal.pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+              >
+                <img
+                  src="/srij.svg"
+                  alt="SRIJ - Serviço de Regulação e Inspeção de Jogos"
+                  className="h-8 md:h-12 w-auto object-contain"
+                />
+              </Link>
+              <Link
+                href="https://www.gambleaware.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+              >
+                <img src="/gamble.webp" alt="GambleAware" className="h-8 md:h-12 w-auto object-contain" />
+              </Link>
+              <Link
+                href="https://www.jogoresponsavel.pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+              >
+                <img src="/jogo2.png" alt="Jogo Responsável" className="h-8 md:h-12 w-auto object-contain" />
+              </Link>
             </div>
           </div>
 
