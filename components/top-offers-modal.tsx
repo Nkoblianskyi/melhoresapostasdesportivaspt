@@ -28,22 +28,21 @@ export function TopOffersModal({ isOpen, onClose }: TopOffersModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={onClose}
+        className="absolute top-4 right-4 text-white hover:bg-white/20 z-10 w-8 h-8 p-0 rounded-full"
+      >
+        <X className="w-5 h-5" />
+      </Button>
 
       <div className="w-full max-w-sm bg-white rounded-xl overflow-hidden shadow-xl">
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={onClose}
-          className="absolute top-48 right-96 text-white hover:bg-white/20 z-10 w-8 h-8 p-0 rounded-full"
-        >
-          <X className="w-5 h-5" />
-        </Button>
         <div className="bg-gradient-to-r from-green-600 to-red-600 p-4 text-center">
           <img
             src={topSite.logo || "/placeholder.svg"}
             alt={topSite.name}
-            className="h-20 w-auto object-contain mx-auto"
+            className="h-12 w-auto object-contain mx-auto"
           />
         </div>
 
